@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+.left-side {
+  background-image: url(img/CardBackground.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 40vw;
+}
+
+.logo {
+  font-family: 'Tilt Prism', cursive;
+  color: whitesmoke;
+}
+
+.photo-credit {
+  color: rgb(59, 121, 255);
+  background-color: black;
+  padding: 5px;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+
+}

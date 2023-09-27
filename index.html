@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magicians Anonymous</title>
   <link rel="stylesheet" href="style.css">
+  <script src="javascript.js" defer></script>
 
   <!-- Tilt Prism Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,7 @@
       <div class="message2"><em>Share Secrets. Trade Tricks. Make Magic.</em></div>
     </h2>
     <form action="" method="post">
-      <div class="formmsg">Let's make magic!</div>
+      <div class="formmsg">Let's do this!</div>
       <div class="formrow">
         <label for="firstname">FIRST NAME
           <input type="text" id="firstname" name="firstname" required>
@@ -44,12 +45,12 @@
         </label>
       </div>
       <div class="formrow">
-        <label for="password">PASSWORD
-          <input type="password" id="password" name="password" required>
-          <div class="pswdmatch">*Passwords do not match</div>
+        <label for="pass1">PASSWORD
+          <input type="password" id="pass1" name="password" required>
+          <div id="pswdmatch"></div>
         </label>
-        <label for="confirmpword">CONFIRM PASSWORD
-          <input type="password" id="confirmpword" name="confirmpword" required>
+        <label for="pass2">CONFIRM PASSWORD
+          <input type="password" id="pass2" name="confirmpword" required>
         </label>
       </div>
       <button type="submit">Create Account</button>

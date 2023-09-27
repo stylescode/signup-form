@@ -87,7 +87,7 @@ form {
 .formmsg {
   font-size: 20px;
   font-weight: 700;
-  margin: 15px 0px;
+  margin: 15px 0px 20px 0px;
 }
 
 .formrow {
@@ -132,9 +132,8 @@ button[type='submit']:hover {
   cursor: pointer;
 }
 
-.pswdmatch {
+#pswdmatch {
   color: red;
-  display: none;
   font-size: 12px;
   margin-top: 3px;
 }
@@ -153,9 +152,8 @@ button[type='submit']:hover {
   text-decoration: underline;
 }
 
-/* For password match validation */
-
-.nomatch {
-  border: 2px solid red;
+.formrow .redborder,
+.formrow .redborder:focus {
+  border: 1px solid red;
 }
 

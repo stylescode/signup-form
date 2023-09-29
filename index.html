@@ -16,9 +16,9 @@
 <body>
   <div class="left-side">
     <div class="logocontainer">
-      <div class="logo">Magician's</div>
+      <div class="logoM">Magician's</div>
       <img src="img/PlayingCards.png" alt="" class="logopic">
-      <div class="logo">Anonymous</div>
+      <div class="logoA">Anonymous</div>
     </div>
     <div class="photo-credit">Photo by <a href="https://unsplash.com/@juliusdrost">Julius Drost</a> on <a href="https://unsplash.com/">Unsplash</a>.</div>
   </div>
@@ -46,14 +46,14 @@
       </div>
       <div class="formrow">
         <label for="pass1">PASSWORD
-          <input type="password" id="pass1" name="password" required>
+          <input type="password" id="pass1" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[\W])[a-zA-Z0-9\W]{8,16}" oninvalid="setCustomValidity('Must contain uppercase letter, lowercase letter, number, and special character.\n Must be between 8-16 characters.')" oninput="setCustomValidity('')" required >
           <div id="pswdmatch"></div>
         </label>
         <label for="pass2">CONFIRM PASSWORD
           <input type="password" id="pass2" name="confirmpword" required>
         </label>
       </div>
-      <button type="submit">Create Account</button>
+      <button type="submit" id="submitBtn">Create Account</button>
     </form>
     <div class="login">Already have an account? <a href="">Log in.</a></div>
 

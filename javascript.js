@@ -11,12 +11,23 @@ function checkPassword() {
     result.textContent = '*Passwords do not match';
     pass1.classList.add('redborder');
     pass2.classList.add('redborder');
-    submitBtn.setAttribute('disabled', 'disabled');
+    disableSubmit();
   } else {
     result.textContent = '';
     pass1.classList.remove('redborder');
     pass2.classList.remove('redborder');
     submitBtn.removeAttribute('disabled');
+  }
+}
+
+function disableSubmit() {
+  let fNameValid = document.querySelector('#firstname:valid');
+  let lNameValid = document.querySelector('#lastname:valid');
+  let emailValid = document.querySelector('#email:valid');
+  let phoneValid = document.querySelector('#phone:valid');
+  let pass1Valid = document.querySelector('#pass1:valid');
+  if (fNameValid && lNameValid && emailValid && phoneValid && pass1Valid) {
+    submitBtn.setAttribute('disabled', 'disabled');
   }
 }
 
